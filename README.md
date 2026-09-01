@@ -202,7 +202,7 @@ Credit Risk Exposure
 Borrower Wealth Segmentation
 Education and Loan Status Analysis
 
-###  Dashboard
+####  Dashboard
 ![Loan Portfolio Overview](./powerbi/page_1_loan_portfolio_overview.png)
 
 ### Page 2 — Borrower & Credit Risk Analysis
@@ -219,6 +219,6 @@ Average CIBIL Score by Loan Status
 Loan Status by Credit Risk Band
 High-CIBIL Borrower Income by Loan Status
 
-### Dashboard
+#### Dashboard
 ![Borrower & Credit Risk Analysis](./powerbi/page_2_borrower_credit_risk.png)
 
