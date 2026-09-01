@@ -202,7 +202,7 @@ Borrower Wealth Segmentation
 Education and Loan Status Analysis
 
 ###  Dashboard
-![Loan Portfolio Overview](powerbi/page_1_loan_portfolio_overview.png)
+![Loan Portfolio Overview](./powerbi/page_1_loan_portfolio_overview.png)
 
 Page 2 — Borrower & Credit Risk Analysis
 The second dashboard page focuses on borrower characteristics and credit risk.
@@ -219,5 +219,5 @@ Loan Status by Credit Risk Band
 High-CIBIL Borrower Income by Loan Status
 
 Dashboard
-![Borrower & Credit Risk Analysis](powerbi/page_2_borrower_credit_risk.png)
+![Borrower & Credit Risk Analysis](./powerbi/page_2_borrower_credit_risk.png)
 
