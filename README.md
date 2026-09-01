@@ -89,8 +89,9 @@ The main objectives of this project are to:
                       │
                       ▼
              Pipeline Orchestration
+```
 
-🔄 Data Pipeline
+### 🔄 Data Pipeline
 1. Dataset
 The project starts with a loan approval dataset obtained from Kaggle in CSV format.
 The raw CSV file was uploaded to an Azure Storage container.
@@ -112,7 +113,7 @@ Creating CIBIL-based credit risk bands
 Creating a credit risk summary
 Writing transformed data in Delta format
 
-🧮 Feature Engineering
+### 🧮 Feature Engineering
 Several analytical features were created using PySpark.
 
 Total Assets
@@ -131,7 +132,7 @@ LTV Ratio =
 Loan Amount / Total Assets
 These features were created to provide additional measures of borrower financial strength and loan exposure.
 
-📊 Credit Risk Classification
+### 📊 Credit Risk Classification
 A credit risk band was created based on the borrower's CIBIL score.
 CIBIL Score	Credit Risk Band
 750 and above	  Excellent (Prime)
@@ -140,15 +141,15 @@ CIBIL Score	Credit Risk Band
 Below 550	      Poor (High Risk)
 This classification was then used in the SQL analysis and Power BI dashboard.
 
-🗄️ Delta Lake
+### 🗄️ Delta Lake
 After transformation, the processed loan data and risk summary were written to Azure Storage in Delta format.
 This created a transformed data layer that could be used for downstream analysis.
 
-🔗 Azure SQL Database
+### 🔗 Azure SQL Database
 The transformed data was loaded into Azure SQL Database.
 Azure SQL was used as the analytical data layer for creating SQL views and preparing data for Power BI.
 
-🔍 SQL Analysis
+### 🔍 SQL Analysis
 Multiple analytical views were created in Azure SQL Database.
 
 The project contains the following SQL views:
@@ -163,7 +164,7 @@ The project contains the following SQL views:
 9. vw_top_ranked_loans_by_education
 10.loan_analysis
 
-💻 SQL Techniques Used
+### 💻 SQL Techniques Used
 The SQL analysis demonstrates several SQL concepts, including:
 COUNT()
 SUM()
@@ -179,15 +180,15 @@ PARTITION BY
 Aggregation and grouping
 Conditional segmentation
 
-🔄 Azure Data Factory
+### 🔄 Azure Data Factory
 Azure Data Factory was connected with Azure Databricks using linked services.
 The purpose of the Data Factory workflow is to orchestrate the data processing process and provide a foundation for scheduling or triggering the Databricks transformation workflow.
 
-📈 Power BI Dashboard
+### 📈 Power BI Dashboard
 The transformed and analytical data was connected to Power BI from Azure SQL Database.
 The Power BI report contains two pages.
 
-Page 1 — Loan Portfolio Overview
+### Page 1 — Loan Portfolio Overview
 The first dashboard page provides an overview of the loan portfolio and credit profile.
 Key analysis includes:
 Total Loan Portfolio
@@ -204,7 +205,7 @@ Education and Loan Status Analysis
 ###  Dashboard
 ![Loan Portfolio Overview](./powerbi/page_1_loan_portfolio_overview.png)
 
-Page 2 — Borrower & Credit Risk Analysis
+### Page 2 — Borrower & Credit Risk Analysis
 The second dashboard page focuses on borrower characteristics and credit risk.
 Key analysis includes:
 Average CIBIL Score
@@ -218,6 +219,6 @@ Average CIBIL Score by Loan Status
 Loan Status by Credit Risk Band
 High-CIBIL Borrower Income by Loan Status
 
-Dashboard
+### Dashboard
 ![Borrower & Credit Risk Analysis](./powerbi/page_2_borrower_credit_risk.png)
 
